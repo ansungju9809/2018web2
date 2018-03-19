@@ -1,0 +1,24 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+li{list-style:none;}
+a{text-decoration: none;}
+/*구역설정*/
+#wrap{width:1200px;margin:0 auto;}
+#head{width:1200px;height:100px;}
+#comment{width:1200px; height:1470px;}
+#footer{width:1200px;height:100px;}
+/*헤드*/
+#head{line-height:100px;float:left;}
+#menu{height:100px;float:right}
+#menu>p{height:50px;float:left;margin-right:10px;}
+/*바디*/
+#mainimg{position:absolute;margin-top:100px}
+#comment>li{float:left;}
+#hire{width:500px;height:300px;float:right;margin-right:50px;margin-top:10px;}
+#hire>li{margin-top:10px;}
+.p{font-size:12px;margin-left:450px;}
+#nhn2{float:right;}
+#notice{width:500px;height:300px;margin-left:50px;margin-top:10px;}
+#notice>li{margin-top:10px;}
+thead{float:left;}
+/*푸터*/
+#footer{background-color:#D8D7D7; font-size:10px;line-height:100px;text-align:center;}

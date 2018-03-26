@@ -11,8 +11,8 @@ li{list-style: none;}
 #header ul li:first-child a{color: red;}
 #header a{text-decoration: none;}
 /*main*/
-#img #recruitimg{width: 35%;height: auto;}
-#img{width:525px;height: auto;}
-#hire{width:975px; height:1000px;float:right;}
+#section #recruitimg{width: 35%;height: auto;}
+#section #hire{width:65%; float:right;}
+#section #notice #content{margin: 50px 50px 0 50px;}
 /*footer*/
 #footer{line-height: 50px;color: black;height: 100px;width: 100%;text-align: center;background-color: #d7d7d7;}

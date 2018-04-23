@@ -9,12 +9,30 @@ a{text-decoration:none; color:#333}
 #home>a, #sign_in>a, #sign_up>a{border:1px solid #E6E6E6;padding:5px;margin-right:5px;}
 #home a:hover {color:#E6E6E6;}
 #search{height:40px;}
-#button{width:40px;height:40px;float:right;margin-top:32px}
+.btn{width:40px;height:40px;float:right;margin-top:32px}
 /*menu*/
 #menu{width:1000px;height:50px;}
-#menu>ul{width:200px;height:50px;float:left;text-align:center;line-height:50px;
-    background-color:#E9E9E9;}
+#menu>ul{width:200px;height:50px;float:left;text-align:center;line-height:50px;background-color:#E9E9E9;}
 #menu>ul>ul{height:0;overflow:hidden;}
 #menu>ul:hover ul{height:250px;transition:0.5s;z-index:100;}
 #menu a:hover{color:#5882FA;}
 #menu>ul:hover ul li{background-color:#E9E9E9;}
+/*slide*/
+#slide{width:1000px;height:600px;position:relative;overflow:hidden;z-index:-12123;}
+#slide img{width:1000px;height:600px;position:absolute;left:-100%;}
+#slide img:first-child{left:0px;z-index:1;}
+/*main*/
+main{width:1000px;height:300px;}
+table{width:470px;float:left;margin:0 auto;}
+caption{font-weight:bold;font-size:25px;}
+table th{float:left;font-size:15px;}
+table td{float:right;}
+#notice{margin-left:15px;}
+#h_notice{margin-left:15px;position:absolute;display:none;}
+table>p{font-size:10px;float:right;}
+.notice{float:left;width:150px;line-height:30px;text-align:center;}
+.h_notice{float:left;width:150px;line-height:30px;text-align:center;}
+#area{width:1000px;height:50px;}
+/*footer*/
+footer{width:1000px;height:100px;
+    background-color: #DEDEDE;}

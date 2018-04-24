@@ -13,12 +13,12 @@ function slide() {
 setInterval(slide,2000);
 
 $(".notice").click(function () {
-    $("#notice").css({"height":"300px"});
+    $("#notice").css({"height":"130px"});
     $("#h_notice").css({"height":"0px"});
 });
 $(".h_notice").click(function () {
     $("#notice").css({"height":"0px"});
-    $("#h_notice").css({"height":"300px"});
+    $("#h_notice").css({"height":"130px"});
 });
 
 var pop=$("#popup img");

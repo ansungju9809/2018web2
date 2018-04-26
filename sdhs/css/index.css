@@ -33,6 +33,7 @@ table>p{font-size:10px;float:right;}
 .notice:hover{color:#5882FA;}
 .h_notice{float:left;width:150px;line-height:30px;text-align:center;background-color: #fff;}
 .h_notice:hover{color:#5882FA;}
+table a:hover{color:#5882FA;}
 #area_button{width:500px;height:50px;}
 #area_button>button{border:none;line-height:50px;}
 #area{width:645px;background-color:#fff;}
@@ -42,6 +43,10 @@ table>p{font-size:10px;float:right;}
 #popup{border:1px solid black;width:310px;height:400px;position:relative;overflow:hidden;float:right;margin-top:-150px;}
 #popup img{width:310px;height:400px;position:absolute;left:-100%;}
 #popup img:first-child{left:0px;z-index:1;}
+/*waist*/
+#waist{margin:15px 0 15px 0;width:1000px; overflow: hidden;height:50px;}
+#waist>img{width:130px;float:left;height:50px;left:-130px;margin-left:10px;}
+waist>img:first-child{left:0px;}
 /*footer*/
 footer{width:1000px;height:100px;background-color: #DEDEDE;}
 footer>div{width:1000px;text-align:center;}

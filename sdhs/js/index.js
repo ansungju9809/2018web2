@@ -13,16 +13,16 @@ function slide() {
 setInterval(slide,2000);
 
 $(".notice").click(function () {
-    $("#notice").css({"height":"130px"});
+    $("#notice").css({"height":"119px"});
     $("#h_notice").css({"height":"0px"});
 });
 $(".h_notice").click(function () {
     $("#notice").css({"height":"0px"});
-    $("#h_notice").css({"height":"130px"});
+    $("#h_notice").css({"height":"119px"});
 });
 
 var pop=$("#popup img");
-var pop_max=img.length-1;
+var pop_max=pop.length-1;
 var i=0;
 
 function pop_slide() {
@@ -34,3 +34,17 @@ function pop_slide() {
     $(pop[i]).animate({"left":"0"});
 }
 setInterval(pop_slide,3000);
+
+var waist=$("#waist img");
+var waist_max=waist.length-1;
+var w=0;
+
+function waist_slide() {
+    $(waist[w]).animate({"left":"130px"},function () {
+        $(this).css({"left":"-130px;"});
+    })
+    w++;
+    if(w>waist_max) w=0;
+    $(waist[w]).animate({"left":"0"})
+}
+setInterval(waist_slide,2000);

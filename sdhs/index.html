@@ -1,122 +1,191 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>서울디지텍고등학교</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script src="js/index.js"></script>
 </head>
 <body>
+<div id="mask"></div>
 <div id="wrap">
     <header id="header">
-        <div id="header2">
-        <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=182125&fileSn=0" alt="logo">
-            <button class="btn"><img  id="button" src="http://www.sdh.hs.kr/design/template/template029/images/top_menu_05/header_top_btn_search.gif" alt="check"></button>
-        <div id="login">
-            <div id="home">
-                <a href="index.html">홈</a>
+        <div id="loginPage">
+            <div class="loginHeader">
+                <h1>로그인</h1>
+                <img src="./img/x.png" id="login_exit" alt="exit">
             </div>
-            <div id="sign_in">
-                <a href=".././signin.php">로그인</a>
-            </div>
-            <div id="sign_up">
-                <a href=".././join.php">회원가입</a>
-            </div>
-                <input type="text" id="search">
+            <form action="#">
+                <dl>
+                    <dt><label for="idSign_ok">아이디</label></dt>
+                    <dd><input type="text" name="id" id="idSign_ok" placeholder="아이디 입력"></dd>
+                </dl>
+                <dl>
+                    <dt><label for="pwSign_ok">패스워드</label></dt>
+                    <dd><input type="password" name="pw" id="pwSign_ok" placeholder="비밀번호 입력"></dd>
+                </dl>
+                <div class="ok_button">
+                    <button class="sign_ok">확인</button>
+                </div>
+            </form>
         </div>
+        <div id="sign_upPage">
+            <div class="loginHeader">
+                <h1>회원가입</h1>
+                <img src="./img/x.png" id="signup_exit" alt="exit">
+            </div>
+            <form action="#">
+                <dl>
+                    <dt><label for="name">이름</label></dt>
+                    <dd><input type="text" name="pw" id="name" placeholder="이름 입력"></dd>
+                </dl>
+                <dl>
+                    <dt><label for="addr">주소</label></dt>
+                    <dd><input type="text" name="addr" id="addr" placeholder="주소 입력"></dd>
+                </dl>
+                <dl>
+                    <dt><label for="idSign_ok">아이디</label></dt>
+                    <dd><input type="text" name="id" id="idSign_ok2" placeholder="아이디 입력"></dd>
+                </dl>
+                <dl>
+                    <dt><label for="pwSign_ok">패스워드</label></dt>
+                    <dd><input type="password" name="pw" id="pwSign_ok2" placeholder="비밀번호 입력"></dd>
+                </dl>
+                <dl>
+                    <dt><label for="pwcSign_ok">패스워드 확인</label></dt>
+                    <dd><input type="password" name="pw" id="pwcSign_ok"  placeholder="비밀번호 입력"></dd>
+                </dl>
+                <div class="ok_button">
+                    <button class="sign_ok">확인</button>
+                </div>
+            </form>
+        </div>
+        <div id="logoLogin">
+            <div id="mainLogo">
+                <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=182124&fileSn=0" alt="서울디지텍고등학교">
+            </div>
+            <div id="header_top_linkWrap">
+                <div id="header_top_link">
+                    <ul>
+                        <li id="login">로그인</li>
+                        <li id="sign_up">회원가입</li>
+                    </ul>
+                </div>
+                <div id="mainSuch">
+                    <form action="#">
+                        <input type="text" id="such" placeholder="검색">
+                        <img id="suchImage" src="http://www.sdh.hs.kr/design/template/template029/images/top_menu_05/header_top_btn_search.gif" alt="돋보기">
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="menu">
-        <ul><li><a href="#">학교소개</a></li>
             <ul>
-                <li><a href="#">설립정신</a></li>
-                <li><a href="#">학교장 인사말</a></li>
-                <li><a href="#">학교연혁</a></li>
-                <li><a href="#">교육/상징</a></li>
-                <li><a href="#">교육 목표</a></li>
+                <li><a href="#">학교소개</a>
+                    <ul>
+                        <li><a href="#">설립정신</a></li>
+                        <li><a href="#">학교장 인사말</a></li>
+                        <li><a href="#">학교연혁</a></li>
+                        <li><a href="#">교육/상징</a></li>
+                        <li><a href="#">교육 목표</a></li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
-        <ul><li><a href="#">알림마당</a></li>
             <ul>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">가정통신문</a></li>
-                <li><a href="#">일정달력</a></li>
-                <li><a href="#">특색사업</a></li>
-                <li><a href="#">교내행사영상</a></li>
+                <li><a href="#">알림마당</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">가정통신문</a></li>
+                        <li><a href="#">일정달력</a></li>
+                        <li><a href="#">특색사업</a></li>
+                        <li><a href="#">교내행사영상</a></li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
-        <ul><li><a href="#">입학안내</a></li>
             <ul>
-                <li><a href="#">입학안내</a></li>
-                <li><a href="#">게임영상과</a></li>
-                <li><a href="#">VR콘텐츠과</a></li>
-                <li><a href="#">공간정보학과</a></li>
-                <li><a href="#">사물인터넷과</a></li>
+                <li><a href="#">입학안내</a>
+                    <ul>
+                        <li><a href="#">입학안내</a></li>
+                        <li><a href="#">게임영상과</a></li>
+                        <li><a href="#">VR콘텐츠과</a></li>
+                        <li><a href="#">공간정보학과</a></li>
+                        <li><a href="#">사물인터넷과</a></li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
-        <ul><li><a href="#">행정공개</a></li>
             <ul>
-                <li><a href="#">학교운영위원회</a></li>
-                <li><a href="#">행정정보공개</a></li>
-                <li><a href="#">교사게시판</a></li>
-                <li><a href="#">행정소식</a></li>
+                <li><a href="#">행정공개</a>
+                    <ul>
+                        <li><a href="#">학교운영위원회</a></li>
+                        <li><a href="#">행정정보공개</a></li>
+                        <li><a href="#">교사게시판</a></li>
+                        <li><a href="#">행정소식</a></li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
-        <ul><li><a href="#">학교평가</a></li>
             <ul>
-                <li><a href="#">2015 학년도</a></li>
-                <li><a href="#">2016 학년도</a></li>
-                <li><a href="#">2017 학년도</a></li>
+                <li><a href="#">학교평가</a>
+                    <ul>
+                        <li><a href="#">2015 학년도</a></li>
+                        <li><a href="#">2016 학년도</a></li>
+                        <li><a href="#">2017 학년도</a></li>
+                    </ul>
+                </li>
             </ul>
-        </ul>
         </div>
     </header>
-    <content>
+    <div>
+        <div id="slide_nav">
+            <ul>
+                <li class="nav"></li>
+                <li class="nav"></li>
+                <li class="nav"></li>
+            </ul>
+        </div>
         <div id="slide">
             <img src="img/sdhs.jpg" alt="slide">
             <img src="img/sdhs1.jpg" alt="slide">
             <img src="img/sdhs2.jpg" alt="slide">
         </div>
-    </content>
+    </div>
     <main>
         <div id="area">
-        <div id="area_button">
-        <button class="notice">공지사항</button>
-        <button class="h_notice">가정통신문</button>
-        </div>
-        <div id="notice">
-            <table>
-                <tr>
-                    <thead><th><a href="#">제5회 교내 사장되기(Be the CEOs) 창업대회 안내</a></th><td>2018-04-04</td></thead>
-                    <thead><th><a href="#">2018년도 국내외 취업상담사 채용</a></th><td>2018-04-04</td></thead>
-                    <thead><th><a href="#">학부모 총회 행사진행</a></th><td>2018-03-23</td></thead>
-                    <thead><th><a href="#">2018년도 교무행정지원사 채용 공고</a></th><td>2018-03-22</td></thead>
-                    <thead><th><a href="#">산학일체형 도제학교 행정요원 채용 공고(긴급)</a></th><td>2018-03-22</td></thead>
-                </tr>
-            </table>
-        </div>
-        <div id="h_notice">
-            <table >
-                <tr>
-                    <thead><th><a href="#">취업(진로)캐프 실시안내</a></th><td>2018-04-11</td></thead>
-                    <thead><th><a href="#">취업(진로)캠프 참가 경비 인출안내</a></th><td>2018-04-06</td></thead>
-                    <thead><th><a href="#">취업(진로)캠프 안전보험 가입 개인정보 동의 안내</a></th><td>2018-04-06</td></thead>
-                    <thead><th><a href="#">< 제 18-28호 > 자녀사랑하기 2호</a></th><td>2018-04-05</td></thead>
-                    <thead><th><a href="#">< 제18-026호 >2018년 4월 급식 안내 가정통신문</a></th><td>2018-03-30</td></thead>
-                </tr>
-            </table>
-        </div>
+            <div id="area_button">
+                <button class="notice">공지사항</button>
+                <button class="h_notice">가정통신문</button>
+            </div>
+            <div id="notice">
+                <table>
+                    <tr>
+                        <th><a href="#">제5회 교내 사장되기(Be the CEOs) 창업대회 안내</a></th><td>2018-04-04</td>
+                        <th><a href="#">2018년도 국내외 취업상담사 채용</a></th><td>2018-04-04</td>
+                        <th><a href="#">학부모 총회 행사진행</a></th><td>2018-03-23</td>
+                        <th><a href="#">2018년도 교무행정지원사 채용 공고</a></th><td>2018-03-22</td>
+                        <th><a href="#">산학일체형 도제학교 행정요원 채용 공고(긴급)</a></th><td>2018-03-22</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="h_notice">
+                <table >
+                    <tr>
+                        <th><a href="#">취업(진로)캐프 실시안내</a></th><td>2018-04-11</td>
+                        <th><a href="#">취업(진로)캠프 참가 경비 인출안내</a></th><td>2018-04-06</td>
+                        <th><a href="#">취업(진로)캠프 안전보험 가입 개인정보 동의 안내</a></th><td>2018-04-06</td>
+                        <th><a href="#">제 18-28호 자녀사랑하기 2호</a></th><td>2018-04-05</td>
+                        <th><a href="#">제18-026호 2018년 4월 급식 안내 가정통신문</a></th><td>2018-03-30</td>
+                    </tr>
+                </table>
+            </div>
         </div>
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.8445829705274!2d126.99053781240809!3d37.53882390415468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24eb401c3c3%3A0xcac6c402eb3ae54f!2z7ISc7Jq465SU7KeA7YWN6rOg65Ox7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1524531551967" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.8445829705274!2d126.99053781240809!3d37.53882390415468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca24eb401c3c3%3A0xcac6c402eb3ae54f!2z7ISc7Jq465SU7KeA7YWN6rOg65Ox7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1524531551967" width="600" height="300" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="popup">
             <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do;jsessionid=YM4aZcWy2Ju3phQ6VMdXC5i20fYmMJ1gylPxQ8K61gJS0JaGMUXdFJWVuHcmQ7Qg.hostingwas3_servlet_engine5?atchFileId=533524&fileSn=0" alt="popup">
-            <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do;jsessionid=YM4aZcWy2Ju3phQ6VMdXC5i20fYmMJ1gylPxQ8K61gJS0JaGMUXdFJWVuHcmQ7Qg.hostingwas3_servlet_engine5?atchFileId=511886&fileSn=0" alt="popup">
-            <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do;jsessionid=YM4aZcWy2Ju3phQ6VMdXC5i20fYmMJ1gylPxQ8K61gJS0JaGMUXdFJWVuHcmQ7Qg.hostingwas3_servlet_engine5?atchFileId=643869&fileSn=0" alt="popup">
         </div>
     </main>
-    <waist>
+    <div>
         <div id="waist">
             <a href="#"><img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=147782&fileSn=0" alt="waist"></a>
             <a href="#"><img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=157631&fileSn=0" alt="waist"></a>
@@ -130,12 +199,41 @@
             <a href="#"><img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=2863&fileSn=0" alt="waist"></a>
             <a href="#"><img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=2864&fileSn=0" alt="waist"></a>
         </div>
-    </waist>
+    </div>
     <footer>
         <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do?atchFileId=182125&fileSn=0" alt="logo">
-        <div><p><a href="#">개인정보처리방침</a> | <a href="#">서비스이용약관</a> | <a href="#">저작권보호정책</a> | <a href="#">찾아오시는길</a></p></div>
+        <div class="footer">
+            <div class="footer_policy">
+                <a href="/dggb/module/policy/selectPolicyDetail.do?policyTypeCode=PLC002&amp;menuNo=78410" style="font-weight:bold">
+                    <font color="red">개인정보처리방침</font>
+                </a>
+                |
+                <a href="/dggb/module/policy/selectPolicyDetail.do?policyTypeCode=PLC003&amp;menuNo=78411" style="font-weight:bold">
+                    서비스이용약관
+                </a>
+                |
+                <a href="/dggb/module/policy/selectPolicyDetail.do?policyTypeCode=PLC004&amp;menuNo=78412" style="font-weight:bold">
+                    저작권보호정책
+                </a>
+                |
+                <a href="/78396/subMenu.do" style="font-weight:bold">
+                    학교길 안내
+                </a>
+            </div>
+            <div class="footer_school_information">
+                <address>
+                    [04346]서울 용산구 회나무로12길 27 (이태원동, 서울디지텍고등학교)<br>
+                </address>
+                <span class="footer_phone">대표전화) 02 - 798 - 3641 ~ 3</span>
+                <span class="footer_phone">팩스) 02 - 794 - 0822</span>
+                <p class="footer_copyright">Copyright (c) 2018 안성주 All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+    <div class="popup">
+        <img src="http://www.sdh.hs.kr/dggb/module/file/selectImageView.do;jsessionid=YM4aZcWy2Ju3phQ6VMdXC5i20fYmMJ1gylPxQ8K61gJS0JaGMUXdFJWVuHcmQ7Qg.hostingwas3_servlet_engine5?atchFileId=533524&fileSn=0" alt="popup" height="887" width="630">
+    </div>
 </div>
 </body>
-<script src="js/index.js"></script>
+
 </html>

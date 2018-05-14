@@ -1,0 +1,27 @@
+*{margin:0;padding:0;}
+#wrap{width:1000px;height:auto;float:left;margin:0 auto;}
+#background{background-image:url("../img/stadium.png");background-repeat:no-repeat;width:648px;height:818px;position:relative;margin:0 auto;}
+li{list-style:none;width:50px;height:50px;border:2px solid white;color:white;border-radius:50%;text-align:center;line-height:50px;font-weight:bold;}
+p{margin:-15px 0 0 -15px;width:80px;font-size:12px;color:white;font-weight:bold;}
+#red{width:648px;height:409px;}
+#red>li{background:#f33;}
+.gk{margin:0 auto;position:relative;top:50px;}
+.line1{margin:50px 0 0 100px;position:relative;top:50px;}
+.line2{margin:-52px 0 -25px 299px;position:relative;top:50px;}
+.line3{margin:-52px 0 -25px 498px;position:relative;top:50px;}
+.line4{margin:50px 0 -25px 50px;position:relative;top:50px;}
+.line5{margin:-50px 0 -25px 212px;position:relative;top:50px;}
+.line6{margin:-50px 0 -25px 388px;position:relative;top:50px;}
+.line7{margin:-50px 0 -25px 533px;position:relative;top:50px;}
+#blue{width:648px;height:409px;margin-top:-70px;}
+#blue>li{background:#444;}
+#gk{margin-top:68px;}
+.red{position:absolute;margin:40px 0 0 10px;}
+.yellow{position: absolute;margin:-5px 0 0 -40px;width:15px;}
+.boll{position:absolute;margin:40px 0 0 -36px;}
+.home{float:right;margin:15px -27px 0 0;}
+.away{float:right;margin:-13px -7px 0 0;}
+.country{position:absolute;margin:16px 0 0 26px;}
+.country1{position:absolute;margin:-14px 0 0 26px;}
+.num1{position:absolute;margin:16px 0 0 90px;}
+.num2{position:absolute;margin:-14px 0 0 90px;}
